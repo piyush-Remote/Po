@@ -36,7 +36,7 @@ const Contact = ({ order }) => {
       className={`page1 ${rotation < -90 ? 'hidden' : ''} ${MobileScreen ? 'custom-transform-origin2' : 'custom-transform-origin1'}`}
     >
       <Sections />
-      <div className='h-full w-full rounded-2xl glassmorphism lassmorphism-gradient'>
+      <div className='h-full w-full rounded-2xl glassmorphism glassmorphism-gradient'>
         <div className={`${divSize ? 'h-screen' : 'h-full'} ${iteration === order ? 'visible' : 'hidden'} w-full`}>
           {/* Content here */}
         </div>

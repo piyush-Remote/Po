@@ -39,7 +39,7 @@
 .AnimatorGradient {
   background: linear-gradient(135deg, #6a11cb, #2575fc, #ff6f61, #ffcc70);
   background-size: 300% 300%;
-  animation: GradientAnimation 20s ease infinite;
+  animation: GradientAnimation 15s ease infinite;
 }
 
 @keyframes GradientAnimation {

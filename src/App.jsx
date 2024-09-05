@@ -10,7 +10,7 @@ import Donation from './components/Donation';
 import NavBar from './components/NavBar';
 
 const App = () => {
-  const {rotator,setdivSize,MobileScreen,setMobileScreen,setRotator,setOpacity}= useContext(MyContext);
+  const {rotator,setMobileScreen,setRotator,setOpacity}= useContext(MyContext);
 
   
   const SCROLL_THRESHOLD = 30;
@@ -19,9 +19,7 @@ const App = () => {
   const MAX_LIMIT = 7;
 // console.log(MIN_LIMIT);
   useEffect(() => {
-    if(window.innerHeight<window.innerWidth* 0.618033){
-      setdivSize(true)
-    }
+
     if(window.innerWidth<window.innerHeight){
       setMobileScreen(true)
     }
@@ -81,10 +79,10 @@ const App = () => {
 <div className='mainDiv h-screen w-screen overflow-hidden AnimatorGradient text-white relative'>
   {/* <div className={`overflow-hidden bg-red-600 w-screen ${MobileScreen ? 'h-[calc(100vw*1.618033)]' : 'h-[calc(100vw * 0.618033)]'}`}> */}
     <NavBar/>
-    <IntroPage order={0}/>
+    <IntroPage order={3}/>
     <TechStack order={1}/>
     <Contact order={2}/>
-    <Projects order={3}/>
+    <Projects order={0}/>
     <Project1 order={4}/>
     <Project2 order={5}/>
     <Donation order={6}/>

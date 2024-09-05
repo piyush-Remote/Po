@@ -9,17 +9,10 @@ const MyContextProvider =({children})=>{
     // const [borderRadius, setBorderRadius] = useState('0.5rem');
     const fixedRatio1 = 0.618033;
     const padding = .3;
-    const tiltingStyle={
-        reverse:true,
-        max:10,
-        // glare:true,
-        gyroscope:true,
-        
-      };
+   
     return(
         <MyContext.Provider
         value={{
-            tiltingStyle,
             padding,
             rotator,
             fixedRatio1,

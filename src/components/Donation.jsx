@@ -25,9 +25,6 @@ const Donation = ({ order }) => {
   }, [order, padding, fixedRatio1, iteration]);
 
   useEffect(() => {
-    console.log('====================================');
-    console.log(calculatedPadding);
-    console.log('====================================');
     // Apply transformation after component is mounted or updated
     if (section.current) {
       section.current.style.transform = `scale(${scale}) rotate(${rotation}deg)`;

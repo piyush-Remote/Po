@@ -35,9 +35,7 @@ const TechStack = ({ order }) => {
     >
       <Sections />
       <div className='h-full w-full rounded-2xl bg-yellow-600'>
-        <div className={`${divSize ? 'h-screen' : 'h-full'} ${iteration === order ? 'visible' : 'hidden'} w-full`}>
-          {/* Content here */}
-        </div>
+        
       </div>
     </div>
   );
